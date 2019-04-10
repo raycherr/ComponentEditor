@@ -5,17 +5,18 @@
   ],
   "blockId": "281909",
   "app": {
-    "appName": "8x8 LED display Matrix - MAX7219",
-    "image": "http://res.cloudinary.com/circuito/image/upload/uksoxl14hwp5jfoepn74",
+    "visible": true,
     "numericName": "MAX7219",
     "shortName": "8x8 LED display Matrix",
+    "appName": "8x8 LED display Matrix - MAX7219",
+    "image": "http://res.cloudinary.com/circuito/image/upload/uksoxl14hwp5jfoepn74",
     "indicators": {
       "verified": true,
       "solder": false
     },
-    "desc": "<p>Control a 8x8 LED matrix display using the MAX7219. Up to 8 modules can be chained for a longer display.</p>\n<p><strong>Sample Application</strong>: <a target=\"_blank\" href=\"http://www.instructables.com/id/LED-Matrix-with-Arduino/\">LED Matrix with Arduino</a></p>\n",
-    "visible": true
+    "desc": "<p>Control a 8x8 LED matrix display using the MAX7219. Up to 8 modules can be chained for a longer display.</p>\n<p><strong>Sample Application</strong>: <a target=\"_blank\" href=\"http://www.instructables.com/id/LED-Matrix-with-Arduino/\">LED Matrix with Arduino</a></p>\n"
   },
+  "altComp": {},
   "circuits": [
     {
       "name": "default",
@@ -156,7 +157,8 @@
           "interface": {
             "chain": true,
             "portType": "provides",
-            "provides": []
+            "provides": [],
+            "codename": "#define LEDMATRIX_PIN_DIN\t11"
           }
         },
         {
@@ -164,7 +166,8 @@
           "interface": {
             "chain": true,
             "portType": "provides",
-            "provides": []
+            "provides": [],
+            "codename": "#define LEDMATRIX_PIN_CLK\t10"
           }
         },
         {
@@ -172,7 +175,8 @@
           "interface": {
             "chain": true,
             "portType": "provides",
-            "provides": []
+            "provides": [],
+            "codename": "#define LEDMATRIX_PIN_CS 13"
           }
         }
       ],
